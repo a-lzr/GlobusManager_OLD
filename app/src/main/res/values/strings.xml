@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GlobusManager</string>
+    <string name="title_control">Контрольные"\n"сообщения</string>
+    <string name="title_messages">Сообщения</string>
+    <string name="title_menu">Меню</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="wifi_title">Wi-Fi</string>
+    <string name="wifi_summary">Вкл. или выкл. сеть WiFi</string>
+    <string name="hints_title">Подсказки</string>
+    <string name="hints_summary">Показывать подсказки</string>
+    <string name="menu_instructions">Инструкции</string>
+    <string name="menu_tools">Утилиты</string>
+    <string name="menu_settings_personal">Личные настройки</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_info">Справка</string>
+</resources>
