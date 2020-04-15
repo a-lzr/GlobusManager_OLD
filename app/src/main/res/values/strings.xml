@@ -15,5 +15,16 @@
     <string name="menu_tools">Утилиты</string>
     <string name="menu_settings_personal">Личные настройки</string>
     <string name="menu_settings">Настройки</string>
+    <string name="menu_settings_theme_title">Темы оформления</string>
+    <string name="menu_settings_theme_dialog">Выберите тему оформления</string>
+    <string name="menu_settings_theme_code">menu_settings_theme_code</string>
+    <string name="menu_settings_theme_classic_code">menu_settings_theme_classic</string>
+    <string name="menu_settings_theme_dark_code">menu_settings_theme_dark</string>
+    <string name="menu_settings_theme_default_code">menu_settings_theme_default</string>
+    <string name="menu_settings_theme_classic_name">Классическая</string>
+    <string name="menu_settings_theme_dark_name">Тёмная</string>
+    <string name="menu_settings_theme_default_name">По умолчанию</string>
+    <string name="menu_settings_theme_set">Установлена тема оформления</string>
     <string name="menu_info">Справка</string>
+
 </resources>
