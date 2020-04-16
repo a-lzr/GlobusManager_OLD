@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import by.tms.globusmanager.MainActivityListener
 import by.tms.globusmanager.R
 import kotlinx.android.synthetic.main.fragment_menu.*
 
@@ -22,6 +22,11 @@ class MenuFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        menuViewModel = ViewModelProvider(this).get(MenuViewModel::class.java)
+
+        with(context as MainActivityListener) {
+            setToolBarTitle(getString(R.string.title_menu))
+        }
 
 //        val adapter =
 //            ArrayAdapter<String>(this, R.layout.item_menu, NamesCollections.instance.names)
@@ -31,7 +36,6 @@ class MenuFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_menu, container, false)
         context ?: return root
 
-        menuViewModel = ViewModelProvider(this).get(MenuViewModel::class.java)
 
 //        menuViewModel = ViewModelProvider(this).get(MenuViewModel::class.java)
 //        val adapter = context?.let { MenuAdapter(it, menuViewModel.list) }
@@ -79,10 +83,14 @@ class MenuFragment : Fragment() {
 //                        http://developer.alexanderklimov.ru/android/preferences_framework.php
 //                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                     }
-                    ID_MENU_INFO -> {
-                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                    }
-                    else -> Toast.makeText(view?.context, "Обработчик еще не задан", Toast.LENGTH_SHORT).show()
+//                    ID_MENU_INFO -> {
+//                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+//                    }
+                    else -> Toast.makeText(
+                        view?.context,
+                        "Обработчик еще не задан",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
 
 //                val intent = Intent(view?.context, DetailActivity::class.java)
