@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="menu_settings_theme" type="id"/>
-    <item name="menu_settings_theme_classic" type="id"/>
-    <item name="menu_settings_theme_dark" type="id"/>
-    <item name="menu_settings_theme_default" type="id"/>
+    <item name="menu_settings_theme_code" type="string">menu_settings_theme</item>
+    <item name="menu_settings_theme_classic_code" type="string">menu_settings_theme_classic</item>
+    <item name="menu_settings_theme_dark_code" type="string">menu_settings_theme_dark</item>
+    <item name="menu_settings_theme_default_code" type="string">menu_settings_theme_default</item>
 </resources>
